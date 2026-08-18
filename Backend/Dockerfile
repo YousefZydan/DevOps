@@ -7,6 +7,7 @@ COPY Clinic/Clinic.csproj Clinic/
 COPY Application/Application.csproj Application/
 COPY Domain/Domain.csproj Domain/
 COPY Infrastructure/Infrastructure.csproj Infrastructure/
+COPY Clinic.Tests/Clinic.Tests.csproj Clinic.Tests/
 
 RUN dotnet restore Clinic.sln
 
