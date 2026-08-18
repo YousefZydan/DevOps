@@ -1,0 +1,171 @@
+2026-08-18 01:33:48.297 +03:00 [INF] User profile is available. Using 'C:\Users\yoyoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-18 01:33:50.542 +03:00 [INF] Executed DbCommand (123ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2026-08-18 01:33:50.697 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2026-08-18 01:33:50.776 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2026-08-18 01:33:50.854 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2026-08-18 01:33:50.950 +03:00 [INF] Executed DbCommand (80ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[Nickname], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[PhotoPublicId], [a].[PhotoUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-08-18 01:33:51.090 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[Nickname], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[PhotoPublicId], [a].[PhotoUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-08-18 01:33:51.169 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[Nickname], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[PhotoPublicId], [a].[PhotoUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-08-18 01:33:51.247 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[Nickname], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[PhotoPublicId], [a].[PhotoUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-08-18 01:33:51.326 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[Nickname], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[PhotoPublicId], [a].[PhotoUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-08-18 01:33:51.404 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[Nickname], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[PhotoPublicId], [a].[PhotoUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-08-18 01:33:51.483 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[Nickname], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[PhotoPublicId], [a].[PhotoUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-08-18 01:33:51.562 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[Nickname], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[PhotoPublicId], [a].[PhotoUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-08-18 01:33:51.642 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[Nickname], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[PhotoPublicId], [a].[PhotoUrl], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-08-18 01:33:51.747 +03:00 [INF] Executed DbCommand (79ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-08-18 01:33:51.835 +03:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Doctors] AS [d]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-08-18 01:33:52.180 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-08-18 01:33:52.324 +03:00 [INF] Now listening on: http://localhost:5127
+2026-08-18 01:33:52.325 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-18 01:33:52.327 +03:00 [INF] Hosting environment: Development
+2026-08-18 01:33:52.329 +03:00 [INF] Content root path: C:\Users\yoyoz\Desktop\عايز اتعلم ديف اوبس\Clinic
+2026-08-18 01:33:52.330 +03:00 [INF] Executed DbCommand (80ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:34:52.510 +03:00 [INF] Executed DbCommand (117ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:35:52.603 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:36:52.709 +03:00 [INF] Executed DbCommand (88ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:37:52.782 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:38:52.860 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:39:13.080 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5127/ - null null
+2026-08-18 01:39:13.260 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5127/ - 301 0 null 206.1351ms
+2026-08-18 01:39:13.281 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5127/index.html - null null
+2026-08-18 01:39:13.423 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5127/index.html - 200 null text/html;charset=utf-8 142.5639ms
+2026-08-18 01:39:13.446 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5127/index.css - null null
+2026-08-18 01:39:13.446 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5127/swagger-ui.css - null null
+2026-08-18 01:39:13.447 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5127/swagger-ui-bundle.js - null null
+2026-08-18 01:39:13.448 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5127/swagger-ui-standalone-preset.js - null null
+2026-08-18 01:39:13.448 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5127/index.js - null null
+2026-08-18 01:39:13.487 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5127/index.js - 200 null application/javascript;charset=utf-8 37.586ms
+2026-08-18 01:39:13.507 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5127/swagger-ui.css - 200 23647 text/css 59.99ms
+2026-08-18 01:39:13.507 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5127/index.css - 200 152 text/css 60.2736ms
+2026-08-18 01:39:13.515 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5127/swagger-ui-standalone-preset.js - 200 77352 text/javascript 66.2129ms
+2026-08-18 01:39:13.551 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5127/swagger-ui-bundle.js - 200 424765 text/javascript 104.0801ms
+2026-08-18 01:39:13.962 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5127/swagger/v1/swagger.json - null null
+2026-08-18 01:39:13.988 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5127/favicon-32x32.png - null null
+2026-08-18 01:39:13.997 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5127/favicon-32x32.png - 200 628 image/png 9.095ms
+2026-08-18 01:39:14.240 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5127/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 277.8936ms
+2026-08-18 01:39:52.956 +03:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:40:53.043 +03:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:41:53.139 +03:00 [INF] Executed DbCommand (79ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:42:53.263 +03:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:43:53.346 +03:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:44:53.432 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:45:53.504 +03:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:46:53.590 +03:00 [INF] Executed DbCommand (82ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:47:53.669 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:48:53.755 +03:00 [INF] Executed DbCommand (79ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:49:53.849 +03:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:50:53.959 +03:00 [INF] Executed DbCommand (97ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:51:54.043 +03:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:52:54.125 +03:00 [INF] Executed DbCommand (80ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedAt], [a].[CreatedBy], [a].[Date], [a].[DoctorId], [a].[Hour], [a].[ModifiedAt], [a].[ModifiedBy], [a].[OneHourReminderSent], [a].[Status], [a].[ThirtyMinutesReminderSent], [a].[UserId]
+FROM [Appointments] AS [a]
+WHERE [a].[Status] = 1
+2026-08-18 01:53:22.713 +03:00 [INF] Application is shutting down...
