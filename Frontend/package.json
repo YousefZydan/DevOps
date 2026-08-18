@@ -56,7 +56,7 @@
     "react-hook-form": "7.69.0",
     "react-resizable-panels": "4.0.16",
     "react-router-dom": "7.11.0",
-    "recharts": "3.6.0",
+    "recharts": "3.10.1",
     "sass": "latest",
     "sass-embedded": "latest",
     "sonner": "2.0.7",
