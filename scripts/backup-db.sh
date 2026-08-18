@@ -20,9 +20,9 @@ FILE="$OUT_DIR/clinic-$STAMP.bak"
 
 docker compose exec -T db /opt/mssql-tools18/bin/sqlcmd \
   -C -S localhost -U sa -P "$MSSQL_SA_PASSWORD" \
-  -Q "BACKUP DATABASE [Clinic] TO DISK = N'/var/opt/mssql/backup/clinic.bak' WITH INIT"
+  -Q "BACKUP DATABASE [Clinic] TO DISK = N'/var/opt/mssql/data/clinic.bak' WITH INIT"
 
-docker compose cp db:/var/opt/mssql/backup/clinic.bak "$FILE"
+docker compose cp db:/var/opt/mssql/data/clinic.bak "$FILE"
 echo "Backup written to $FILE"
 echo "Keep at least 7 daily backups. Delete files older than 14 days:"
 find "$OUT_DIR" -name 'clinic-*.bak' -mtime +14 -delete || true

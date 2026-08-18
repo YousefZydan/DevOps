@@ -626,4 +626,13 @@ export const notificationApi = {
   },
 }
 
+export const chatApi = {
+  async triage(messages) {
+    return apiFetch("/api/Chat/triage", {
+      method: "POST",
+      body: JSON.stringify({ messages }),
+    })
+  },
+}
+
 export { ApiError }

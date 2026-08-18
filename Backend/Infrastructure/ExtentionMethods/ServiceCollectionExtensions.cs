@@ -57,6 +57,11 @@ namespace MyProject.Infrastructure.Extensions
 
 
             services.AddScoped<IFirebaseNotificationService, FirebaseNotificationService>();
+            services.AddHttpClient<IChatService, ChatService>(client =>
+            {
+                client.BaseAddress = new Uri("https://api.groq.com/");
+                client.Timeout = TimeSpan.FromSeconds(30);
+            });
 
 
 

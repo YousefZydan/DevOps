@@ -29,6 +29,10 @@
   "Redis": {
     "Connection": ""
   },
+  "Groq": {
+    "ApiKey": "",
+    "Model": "llama-3.3-70b-versatile"
+  },
   "APPLY_MIGRATIONS": false,
   "SEED_DATABASE": false
 }
