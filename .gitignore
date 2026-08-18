@@ -30,7 +30,9 @@ publish/
 Frontend/node_modules/
 Frontend/dist/
 Frontend/.env
-Frontend/.env.*
+Frontend/.env.local
+Frontend/.env.production
+Frontend/.env.*.local
 !Frontend/.env.example
 
 # OS / IDE

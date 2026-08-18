@@ -7,52 +7,7 @@ import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { Card, CardContent } from "./ui/card"
 
-/**
- * ⚠️ SECURITY NOTE — read before shipping to production
- * ---------------------------------------------------------------
- * This component calls Groq's API directly from the browser using
- * VITE_GROQ_API_KEY. Any key referenced via import.meta.env.VITE_*
- * is bundled into your JS and is visible to anyone who opens dev
- * tools — it is NOT secret once deployed. That's fine for an
- * internal demo, but for production you should move this fetch call
- * to your backend (e.g. POST /api/chat) and keep the Groq key as a
- * server-side secret. The frontend code below would then call your
- * own backend endpoint instead of api.groq.com directly.
- * ---------------------------------------------------------------
- */
-
-const GROQ_API_KEY = import.meta.env.VITE_GROQ_API_KEY
-const GROQ_MODEL = "llama-3.3-70b-versatile"
-
-// Must match the `name` values used in the Categories section of HomePage
-const SPECIALTIES = [
-  "Dentistry",
-  "Cardiology",
-  "Pulmonology",
-  "General",
-  "Neurology",
-  "Gastroenterology",
-  "Laboratory",
-  "Vaccination",
-]
-
-const SYSTEM_PROMPT = `You are a friendly triage assistant for a healthcare booking app. Your job is to ask the patient short, simple follow-up questions about their symptoms (one or two at a time, not a long list) until you are confident enough to recommend which medical specialty they should book.
-
-You must only recommend one of these specialties: ${SPECIALTIES.join(", ")}.
-
-Rules:
-- Keep replies short and conversational, like a helpful receptionist, not a doctor giving a diagnosis.
-- Ask at most 2-3 follow-up questions before giving a recommendation.
-- When you are ready to recommend, end your message with a separate final line in exactly this format: "Recommended specialty: <one of the list above>".
-- Never attempt to diagnose a condition, prescribe treatment, or give medical advice beyond pointing to the right specialty.
-- If the patient describes anything that sounds like a medical emergency (e.g. chest pain, difficulty breathing, severe bleeding, stroke symptoms), tell them to seek emergency care immediately instead of recommending a specialty.`
-
-function extractSpecialty(text) {
-  const match = text.match(/Recommended specialty:\s*([A-Za-z]+)/i)
-  if (!match) return null
-  const found = SPECIALTIES.find((s) => s.toLowerCase() === match[1].trim().toLowerCase())
-  return found || null
-}
+import { chatApi } from "../lib/api"
 
 export default function ChatBotWidget() {
   const [isOpen, setIsOpen] = useState(false)
@@ -85,36 +40,11 @@ export default function ChatBotWidget() {
     setIsLoading(true)
 
     try {
-      if (!GROQ_API_KEY) {
-        throw new Error("Missing VITE_GROQ_API_KEY environment variable")
-      }
-
-      const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${GROQ_API_KEY}`,
-        },
-        body: JSON.stringify({
-          model: GROQ_MODEL,
-          temperature: 0.4,
-          messages: [
-            { role: "system", content: SYSTEM_PROMPT },
-            ...nextMessages.map((m) => ({ role: m.role, content: m.content })),
-          ],
-        }),
-      })
-
-      if (!response.ok) {
-        const errBody = await response.text()
-        throw new Error(`Groq API error (${response.status}): ${errBody}`)
-      }
-
-      const data = await response.json()
-      const reply = data.choices?.[0]?.message?.content?.trim() || "Sorry, I didn't catch that. Could you rephrase?"
-      const specialty = extractSpecialty(reply)
-
-      setMessages((prev) => [...prev, { role: "assistant", content: reply, specialty }])
+      const data = await chatApi.triage(
+        nextMessages.map((m) => ({ role: m.role, content: m.content })),
+      )
+      const reply = data.reply?.trim() || "Sorry, I didn't catch that. Could you rephrase?"
+      setMessages((prev) => [...prev, { role: "assistant", content: reply, specialty: data.specialty || null }])
     } catch (err) {
       console.error(err)
       setError("Something went wrong reaching the assistant. Please try again.")

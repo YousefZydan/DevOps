@@ -18,8 +18,8 @@ if [ -f .env ]; then
 fi
 
 SRC="$1"
-docker compose cp "$SRC" db:/var/opt/mssql/backup/restore.bak
+docker compose cp "$SRC" db:/var/opt/mssql/data/restore.bak
 docker compose exec -T db /opt/mssql-tools18/bin/sqlcmd \
   -C -S localhost -U sa -P "$MSSQL_SA_PASSWORD" \
-  -Q "ALTER DATABASE [Clinic] SET SINGLE_USER WITH ROLLBACK IMMEDIATE; RESTORE DATABASE [Clinic] FROM DISK = N'/var/opt/mssql/backup/restore.bak' WITH REPLACE; ALTER DATABASE [Clinic] SET MULTI_USER;"
+  -Q "ALTER DATABASE [Clinic] SET SINGLE_USER WITH ROLLBACK IMMEDIATE; RESTORE DATABASE [Clinic] FROM DISK = N'/var/opt/mssql/data/restore.bak' WITH REPLACE; ALTER DATABASE [Clinic] SET MULTI_USER;"
 echo "Restore completed from $SRC"

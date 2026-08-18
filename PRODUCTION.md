@@ -55,8 +55,8 @@ Keep copies off the VPS (S3, Backblaze, or your disk). Retention in the script d
 docker compose -f docker-compose.yml -f docker-compose.monitoring.yml up -d
 ```
 
-Prometheus: `http://SERVER_IP:9090`  
-Grafana: `http://SERVER_IP:3001`  
+Prometheus: `http://127.0.0.1:9090` (SSH tunnel; not public)  
+Grafana: `http://127.0.0.1:3001`  
 
 Do not expose these ports on the public internet without auth. Prefer SSH tunnels.
 
