@@ -1,0 +1,34 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "Clinic": "Server=localhost,1433;Database=Clinic;User Id=sa;Password=CHANGE_ME;TrustServerCertificate=True;Encrypt=True"
+  },
+  "Cors": {
+    "AllowedOrigins": "http://localhost:3000,http://localhost"
+  },
+  "Jwt": {
+    "Key": "REPLACE_WITH_A_LONG_RANDOM_SECRET_AT_LEAST_32_CHARS",
+    "Issuer": "Medora",
+    "Audience": "MedoraClients",
+    "DurationInMinutes": 60
+  },
+  "Firebase": {
+    "CredentialsPath": "Firebase/clinic-firebase.json"
+  },
+  "CloudinarySettings": {
+    "CloudName": "",
+    "ApiKey": "",
+    "ApiSecret": ""
+  },
+  "Redis": {
+    "Connection": ""
+  },
+  "APPLY_MIGRATIONS": false,
+  "SEED_DATABASE": false
+}

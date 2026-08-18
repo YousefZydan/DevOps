@@ -1,0 +1,15 @@
+http://localhost, http://127.0.0.1 {
+  encode gzip
+
+  header {
+    X-Content-Type-Options nosniff
+    X-Frame-Options DENY
+    Referrer-Policy strict-origin-when-cross-origin
+    -Server
+  }
+
+  @api path /api* /notificationHub* /health /health/*
+  reverse_proxy @api backend:8080
+
+  reverse_proxy frontend:8080
+}

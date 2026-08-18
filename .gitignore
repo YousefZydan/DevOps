@@ -1,13 +1,39 @@
-# Ignore appsettings
-appsettings.json
-appsettings.Development.json
-Clinic/Firebase/clinic-firebase.json
-# Or any environment configs
-appsettings.*.json
+# Secrets and local config
+.env
+.env.local
+.env.production
+*.pfx
+*.pem
+*.key
 
+# Backend
+Backend/**/bin/
+Backend/**/obj/
+Backend/**/.vs/
+Backend/**/*.user
+Backend/**/*.suo
+Backend/Clinic/logs2/
+Backend/Clinic/Firebase/clinic-firebase.json
+Backend/**/appsettings.json
+Backend/**/appsettings.Development.json
+Backend/**/appsettings.*.json
+!Backend/**/appsettings.json.example
+!Backend/**/appsettings.example.json
 
+# Legacy paths (pre-restructure)
 bin/
 obj/
 .vs/
-*.user
-*.suo
+publish/
+
+# Frontend
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.env
+Frontend/.env.*
+!Frontend/.env.example
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.log

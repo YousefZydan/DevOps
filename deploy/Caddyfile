@@ -1,0 +1,38 @@
+{
+  email {$ACME_EMAIL}
+
+  servers {
+    trusted_proxies static 0.0.0.0/0
+  }
+}
+
+{$DOMAIN:localhost} {
+  encode gzip
+
+  header {
+    Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    X-Content-Type-Options nosniff
+    X-Frame-Options DENY
+    Referrer-Policy strict-origin-when-cross-origin
+    -Server
+  }
+
+  @api path /api* /notificationHub* /health /health/* /swagger*
+  reverse_proxy @api backend:8080
+
+  reverse_proxy frontend:8080
+}
+
+api.{$DOMAIN:localhost} {
+  encode gzip
+
+  header {
+    Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    X-Content-Type-Options nosniff
+    X-Frame-Options DENY
+    Referrer-Policy strict-origin-when-cross-origin
+    -Server
+  }
+
+  reverse_proxy backend:8080
+}

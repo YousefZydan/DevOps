@@ -1,0 +1,15 @@
+**/.git
+**/.vs
+**/bin
+**/obj
+**/logs2
+**/publish
+**/*.user
+**/appsettings.json
+**/appsettings.Development.json
+**/appsettings.*.json
+!**/appsettings.json.example
+**/Firebase/*.json
+**/*.md
+**/.env
+**/.env.*
