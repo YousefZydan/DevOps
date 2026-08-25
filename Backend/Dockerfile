@@ -14,7 +14,7 @@ RUN dotnet restore Clinic.sln
 COPY . .
 RUN dotnet publish Clinic/Clinic.csproj -c Release -o /app/publish --no-restore
 
-FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
 WORKDIR /app
 
 RUN apt-get update \
